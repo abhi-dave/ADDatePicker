@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "ADDatePicker is easy to implement, Horizontal Calendar library. It is Fully written in Swift"
 
-  s.homepage     = "http://EXAMPLE/ADDatePicker"
+  #s.homepage     = "http://EXAMPLE/ADDatePicker"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -104,7 +104,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "Resources/*.xib"
+  # s.resources = "Resources/*.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
