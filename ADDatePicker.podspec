@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ADDatePicker"
-  s.version      = "0.9.1"
+  s.version      = "0.9.2"
   s.summary      = "A fully customizable iOS Horizontal calendar library, written in pure swift"
 
   # This description is used to generate tags and improve search results.
@@ -132,6 +132,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
+   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end
