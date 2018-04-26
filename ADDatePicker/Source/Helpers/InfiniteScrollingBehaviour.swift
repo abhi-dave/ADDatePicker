@@ -4,20 +4,20 @@
 //
 //  Created by Vishal Singh on 1/21/17.
 //  Copyright © 2017 Vishal Singh. All rights reserved.
-//
+//  Updated by Abhishek Dave
 
 import UIKit
 
 public protocol InfiniteScrollingBehaviourDelegate: class {
-    func configuredCell(forItemAtIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, forInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> UICollectionViewCell
-    func didSelectItem(atIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> Void
+    func configuredCell(collectionView: UICollectionView,forItemAtIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, forInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> UICollectionViewCell
+    func didSelectItem(collectionView: UICollectionView,atIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> Void
     func didEndScrolling(inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour)
     func verticalPaddingForHorizontalInfiniteScrollingBehaviour(behaviour: InfiniteScrollingBehaviour) -> CGFloat
     func horizonalPaddingForHorizontalInfiniteScrollingBehaviour(behaviour: InfiniteScrollingBehaviour) -> CGFloat
 }
 
 public extension InfiniteScrollingBehaviourDelegate {
-    func didSelectItem(atIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> Void { }
+    func didSelectItem(collectionView: UICollectionView,atIndexPath indexPath: IndexPath, originalIndex: Int, andData data: InfiniteScollingData, inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) -> Void { }
     func didEndScrolling(inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) { }
     func verticalPaddingForHorizontalInfiniteScrollingBehaviour(behaviour: InfiniteScrollingBehaviour) -> CGFloat {
         return 0
@@ -146,8 +146,8 @@ public class InfiniteScrollingBehaviour: NSObject {
     public func scroll(toElementAtIndex index: Int) {
         let boundaryDataSetIndex = indexInBoundaryDataSet(forIndexInOriginalDataSet: index)
         let indexPath = IndexPath(item: boundaryDataSetIndex, section: 0)
-        let scrollPosition: UICollectionViewScrollPosition = collectionConfiguration.scrollingDirection == .horizontal ? .left : .top
-        collectionView.scrollToItem(at: indexPath, at: scrollPosition, animated: false)
+        let scrollPosition: UICollectionViewScrollPosition = collectionConfiguration.scrollingDirection == .horizontal ? .centeredHorizontally : .top
+        collectionView.scrollToItem(at: indexPath, at: scrollPosition, animated: true)
     }
     
     public func indexInOriginalDataSet(forIndexInBoundaryDataSet index: Int) -> Int {
@@ -171,7 +171,7 @@ public class InfiniteScrollingBehaviour: NSObject {
         self.dataSet = dataSet
         configureBoundariesForInfiniteScroll()
         collectionView.reloadData()
-        scrollToFirstElement()
+        //scrollToFirstElement()
     }
     
     public func updateConfiguration(configuration: CollectionViewConfiguration) {
@@ -225,7 +225,7 @@ extension InfiniteScrollingBehaviour: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let originalIndex = indexInOriginalDataSet(forIndexInBoundaryDataSet: indexPath.item)
-        delegate?.didSelectItem(atIndexPath: indexPath, originalIndex: originalIndex, andData: dataSetWithBoundary[indexPath.item], inInfiniteScrollingBehaviour: self)
+        delegate?.didSelectItem(collectionView: collectionView, atIndexPath: indexPath, originalIndex: originalIndex, andData: dataSetWithBoundary[indexPath.item], inInfiniteScrollingBehaviour: self)
     }
     
     
@@ -271,7 +271,7 @@ extension InfiniteScrollingBehaviour: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let originalIndex = indexInOriginalDataSet(forIndexInBoundaryDataSet: indexPath.item)
-        return delegate.configuredCell(forItemAtIndexPath: indexPath, originalIndex: originalIndex, andData: dataSetWithBoundary[indexPath.item], forInfiniteScrollingBehaviour: self)
+        return delegate.configuredCell(collectionView: collectionView, forItemAtIndexPath: indexPath, originalIndex: originalIndex, andData: dataSetWithBoundary[indexPath.item], forInfiniteScrollingBehaviour: self)
     }
 }
 
@@ -289,5 +289,24 @@ extension Int {
             return CGFloat(self)
         }
     }
+}
+
+
+extension UIView {
+    
+    func selectSelectionType(selectionType: SelectionType){
+        switch selectionType {
+        case .square:
+            self.layer.cornerRadius = 0.0
+            break
+        case .roundedsquare:
+            self.layer.cornerRadius = 5.0
+            break
+        case .circle:
+            self.layer.cornerRadius = self.frame.size.width / 2
+            break
+        }
+    }
+    
 }
 

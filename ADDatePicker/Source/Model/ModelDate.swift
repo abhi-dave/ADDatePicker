@@ -20,6 +20,7 @@ class ModelDate {
     }
 }
 
+extension ModelDate: InfiniteScollingData {}
 
 extension ModelDate {
     

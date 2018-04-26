@@ -23,31 +23,29 @@ class ADDatePickerCell: UICollectionViewCell {
 
 extension ADDatePickerCell {
 
-    func selectedCell(bgColor: UIColor, textColor: UIColor){
-        self.backgroundColor = bgColor
+    func selectedCell(textColor: UIColor){
+        self.backgroundColor = .clear
         self.dateLbl.textColor = textColor
         self.alpha = 1
     }
-    func selectSelectionType(selectionType: SelectionType){
-        switch selectionType {
-        case .square:
-            self.layer.cornerRadius = 0.0
-            break
-        case .roundedsquare:
-            self.layer.cornerRadius = 5.0
-            break
-        case .circle:
-            self.layer.cornerRadius = self.frame.size.width / 2
-            break
-        }
-    }
+//    func selectSelectionType(selectionType: SelectionType){
+//        switch selectionType {
+//        case .square:
+//            self.layer.cornerRadius = 0.0
+//            break
+//        case .roundedsquare:
+//            self.layer.cornerRadius = 5.0
+//            break
+//        case .circle:
+//            self.layer.cornerRadius = self.frame.size.width / 2
+//            break
+//        }
+//    }
     
     func deSelectCell(bgColor: UIColor, textColor: UIColor){
         self.backgroundColor = bgColor
         self.dateLbl.textColor = textColor
         self.alpha = 0.5
     }
-    
-    
 
 }
