@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ADDatePicker"
-  s.version      = "0.4.5"
+  s.version      = "0.9.1"
   s.summary      = "A fully customizable iOS Horizontal calendar library, written in pure swift"
 
   # This description is used to generate tags and improve search results.
