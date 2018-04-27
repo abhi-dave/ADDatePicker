@@ -1,4 +1,4 @@
-![ADDatePicker: Horizontal Date Picker](https://github.com/abhiperry/ADDatePicker/Documentation/AdDatePicker.png)
+![ADDatePicker: Horizontal Date Picker](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/AdDatePicker.png)
 
 
 ADDatePicker is Horizontal Date Picker Library written in Swift
