@@ -1,11 +1,13 @@
-![ADDatePicker: Horizontal Date Picker](https://github.com/abhiperry/ADDatePicker/Documentation/AdDatePicker.png)
+![ADDatePicker: Horizontal Date Picker](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/AdDatePicker.png)
 
 
 ADDatePicker is Horizontal Date Picker Library written in Swift
 
+
 - [Requirements](#requirements)
 - [Communication](#communication)
 - [Installation](#installation)
+- [Demo](#demo)
 - [Credits](#credits)
 - [License](#license)
 
@@ -50,6 +52,12 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+## Demo
+
+![ADDatePickerDEMO1](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo1.gif)      ![ADDatePickerDEMO2](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo2.gif)
+
+Customize with ease..!
+
 
 ## Credits
 
