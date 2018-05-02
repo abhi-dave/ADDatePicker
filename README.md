@@ -7,7 +7,9 @@ ADDatePicker is Horizontal Date Picker Library written in Swift
 - [Requirements](#requirements)
 - [Communication](#communication)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Demo](#demo)
+- [Customization](#customization)
 - [Credits](#credits)
 - [License](#license)
 
