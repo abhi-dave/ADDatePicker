@@ -52,13 +52,69 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+
+## Usage
+
+- First, set Custom Class of UIView to ADDatePicker...
+
+<img src="https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/Add%20Class.png" width="480">
+
+
+..And That's it., you can run the project now. it's that simple. ;]
+
+
 ## Demo
 
-![ADDatePickerDEMO1](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo1.gif)      ![ADDatePickerDEMO2](https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo2.gif)
+<img src="https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo1.gif" width="240">  <img src="https://github.com/abhiperry/ADDatePicker/blob/master/Documentation/ADDatePicker_Demo2.gif" width="240">
 
 Customize with ease..!
 
+## Customization 
 
+> "Listen up, Dave. Your code is poor and colour choices are even poorer. this doesn't look good"
+
+> "Calm Down Joe, I gotchu.."
+
+```swift
+ @IBOutlet weak var datePicker: ADDatePicker!
+```
+#### 1. Reset Range of years.
+  ```swift
+   datePicker.yearRange(inBetween: 1990, end: 2022)
+  ``` 
+#### 2. Set Intial Date to Picker.
+  ```swift
+   datePicker.intialDate = Date()
+  ``` 
+#### 3. Yay, Colours.. or Colors. (depends.. where you came from)
+  ```swift
+    //set BackGround Color of DatePicker
+    datePicker.bgColor = .blue
+
+    //set Selection and Deselection Background Colors
+        
+    datePicker.deselectedBgColor = .clear
+    datePicker.selectedBgColor = .white
+        
+    //set Selection and Deselection Text Colors
+    datePicker.selectedTextColor = .black 
+    datePicker.deselectTextColor = UIColor.init(white: 1.0, alpha: 0.7)
+  ```
+
+#### 4. Customize Selector..
+
+   Currently, there are three selectionType available. you're most welcome to contribute if you want to extand this       list.
+  ```swift
+   enum SelectionType {
+       case square
+       case roundedsquare
+       case circle
+   }    
+  ```
+  You can change selector by writing this piece of code.
+  ```swift
+   datePicker.selectionType = .circle
+  ```
 ## Credits
 
 ADDatePicker is developed under observation of the great minds of [Space-O Technology](https://www.spaceotechnologies.com)
