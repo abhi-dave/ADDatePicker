@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     func customDatePicker1(){
         DatePicker.yearRange(inBetween: 1990, end: 2022)
-        DatePicker.selectionType = .circle
+        DatePicker.selectionType = .roundedsquare
         DatePicker.bgColor = #colorLiteral(red: 0.3444891578, green: 0.5954311329, blue: 0.6666666865, alpha: 1)
         DatePicker.deselectTextColor = UIColor.init(white: 1.0, alpha: 0.7)
         DatePicker.deselectedBgColor = .clear

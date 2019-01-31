@@ -1,0 +1,6 @@
+framework module ADDatePicker {
+  umbrella header "ADDatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
