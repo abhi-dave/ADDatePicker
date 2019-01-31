@@ -32,7 +32,7 @@ class CalendarHelper{
         }else {
             fatalError("startYear cannot be greater than EndYear")
         }
-
+        
     }
     
     static func fetchDays(_ years: [ModelDate], _ months: [ModelDate]) -> Int {
@@ -81,6 +81,9 @@ class CalendarHelper{
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
+        if currentDay == "" {
+            currentDay = (days.last?.type)!
+        }
         let date = dateFormatter.date(from: "\(currentMonth)/\(currentDay)/\(currentYear)")
         
         return date!
@@ -106,7 +109,7 @@ extension Array where Element: ModelDate {
         }
         return ModelDate(type: "2006", isSelected: false)
     }
-
+    
     func selectDay(selectedDay: ModelDate){
         for day in self  {
             if day == selectedDay {

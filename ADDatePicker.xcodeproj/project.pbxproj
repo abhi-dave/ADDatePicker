@@ -419,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceo.ADDatePicker;
 				PRODUCT_NAME = ADDatePicker;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -440,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceo.ADDatePicker;
 				PRODUCT_NAME = ADDatePicker;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

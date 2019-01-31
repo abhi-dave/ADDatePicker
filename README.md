@@ -15,9 +15,9 @@ ADDatePicker is Horizontal Date Picker Library written in Swift
 
 ## Requirements
 
-- iOS 9.0+
-- Xcode 8.3+
-- Swift 3.2+
+- iOS 10.0+
+- Xcode 10.0+
+- Swift 4.2+
 
 ## Communication
 
@@ -117,6 +117,16 @@ Customize with ease..!
   ```swift
    datePicker.selectionType = .circle
   ```
+  
+ #### 5. Delegate Methods..
+    
+   Now, You can confirm to Delegate method to access date on scroll 
+   ```swift
+   datePicker.delegate = self
+   func ADDatePicker(didChange date: Date)
+   ```
+   Which allows you to get new date on every scroll.
+      
 ## Credits
 
 ADDatePicker is developed under observation of the great minds of [Space-O Technology](https://www.spaceotechnologies.com)
