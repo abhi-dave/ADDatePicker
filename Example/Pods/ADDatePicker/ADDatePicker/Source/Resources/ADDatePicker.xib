@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ADDatePicker" customModule="ADDatePicker" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarView" destination="iN0-l3-epB" id="DG0-Rh-yjf"/>
+                <outlet property="dateRow" destination="uue-S1-AeU" id="A3r-6k-84E"/>
+                <outlet property="monthRow" destination="B3j-qb-uoa" id="CF7-2y-kTY"/>
+                <outlet property="selectionView" destination="n5m-Iv-0PB" id="uxh-on-Iy9"/>
+                <outlet property="yearRow" destination="fTz-JR-Jat" id="0ou-rg-qD6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uue-S1-AeU">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="66.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="us4-zh-oyM">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B3j-qb-uoa">
+                    <rect key="frame" x="0.0" y="66.5" width="300" height="66"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h9x-Fo-rSO">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-JR-Jat">
+                    <rect key="frame" x="0.0" y="133.5" width="300" height="66.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lTu-mm-jLz">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-kS-exU">
+                    <rect key="frame" x="0.0" y="65.5" width="300" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBt-fm-atM">
+                    <rect key="frame" x="0.0" y="132.5" width="300" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yP9-VS-Ycp"/>
+                    </constraints>
+                </view>
+                <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-Iv-0PB">
+                    <rect key="frame" x="115" y="0.0" width="70" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="nkL-vF-nWx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n5m-Iv-0PB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1dH-SL-3Qr"/>
+                <constraint firstItem="XZ8-kS-exU" firstAttribute="height" secondItem="SBt-fm-atM" secondAttribute="height" id="5iI-WU-U7P"/>
+                <constraint firstItem="n5m-Iv-0PB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6HB-Pm-qRe"/>
+                <constraint firstItem="uue-S1-AeU" firstAttribute="height" secondItem="fTz-JR-Jat" secondAttribute="height" id="7JL-5H-w0z"/>
+                <constraint firstItem="SBt-fm-atM" firstAttribute="top" secondItem="B3j-qb-uoa" secondAttribute="bottom" id="8mY-BY-Npj"/>
+                <constraint firstItem="fTz-JR-Jat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9xk-uK-iGv"/>
+                <constraint firstAttribute="trailing" secondItem="SBt-fm-atM" secondAttribute="trailing" id="AcW-pP-2pg"/>
+                <constraint firstItem="B3j-qb-uoa" firstAttribute="trailing" secondItem="SBt-fm-atM" secondAttribute="trailing" id="CA6-IF-kKR"/>
+                <constraint firstItem="B3j-qb-uoa" firstAttribute="top" secondItem="uue-S1-AeU" secondAttribute="bottom" id="CYa-Mf-64b"/>
+                <constraint firstItem="uue-S1-AeU" firstAttribute="height" secondItem="B3j-qb-uoa" secondAttribute="height" id="Cpg-bp-aZV"/>
+                <constraint firstItem="fTz-JR-Jat" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ek2-Vi-QKH"/>
+                <constraint firstAttribute="trailing" secondItem="XZ8-kS-exU" secondAttribute="trailing" id="Hn7-RO-50Q"/>
+                <constraint firstItem="fTz-JR-Jat" firstAttribute="top" secondItem="SBt-fm-atM" secondAttribute="bottom" id="Kel-kA-jhl"/>
+                <constraint firstItem="uue-S1-AeU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W7C-ev-v5P"/>
+                <constraint firstItem="B3j-qb-uoa" firstAttribute="top" secondItem="XZ8-kS-exU" secondAttribute="bottom" id="e39-Yq-rfM"/>
+                <constraint firstItem="uue-S1-AeU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eqP-5w-dkV"/>
+                <constraint firstItem="B3j-qb-uoa" firstAttribute="leading" secondItem="SBt-fm-atM" secondAttribute="leading" id="fVP-q1-Kgm"/>
+                <constraint firstItem="uue-S1-AeU" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="h3g-gH-LOE"/>
+                <constraint firstItem="XZ8-kS-exU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kiS-bb-CIP"/>
+                <constraint firstItem="fTz-JR-Jat" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="msR-yB-dsM"/>
+                <constraint firstItem="SBt-fm-atM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xQ2-i1-EZe"/>
+                <constraint firstItem="n5m-Iv-0PB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y5R-zm-Oal"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
