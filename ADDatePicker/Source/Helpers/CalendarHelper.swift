@@ -37,7 +37,7 @@ class CalendarHelper{
     
     static func fetchDays(_ years: [ModelDate], _ months: [ModelDate]) -> Int {
         var numDays = 0
-        var currentMonth = "6"
+        var currentMonth = "7"
         for (index, month) in months.enumerated() {
             if month.isSelected == true {
                 currentMonth = "\(index + 1)"
