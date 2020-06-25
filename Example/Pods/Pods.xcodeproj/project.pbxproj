@@ -3,240 +3,220 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D563800C5C0562E716B103334E10C28 /* ADDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2CD1B0A71FBA74D8DDAFD627C88F2 /* ADDatePicker.swift */; };
-		1A91E02265E86AF45E992FA63DA64DF7 /* InfiniteScrollingBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6FC2B72BE1DBE379E1AEA35B17BD3 /* InfiniteScrollingBehaviour.swift */; };
-		1B2DBEFDDFB10E20BCBC04575E171FDA /* BDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D5F44422B5E302A8014C197CCDAD9F /* BDate.swift */; };
-		29F2FC778BBC273778BD5A99F091EC31 /* ADDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533D6AE221B6CB832C9489FFE0D2A15 /* ADDatePicker-dummy.m */; };
-		2BAFBC3740E408146288624468CC8E75 /* ADHorizontalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = C47982C9BA65145E99631E90A4EBA378 /* ADHorizontalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43CA5BF503A3AE0E2E3179D8F17D7FB1 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A877A451E3FF56ADB9721A1E522F9D6 /* ADDatePickerCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 272301D642625A5AFC8763C8A48A5405 /* ADDatePickerCell.xib */; };
-		630BC3573C0B4DCFC8C69DF58A2E2DE1 /* ADDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647A0AE777332D058030D8E4039F6F2 /* ADDatePickerCell.swift */; };
-		68178B2800423684A66C19B807FBE7A5 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */; };
-		A22AFC3F5D6BA0ABA87AD7471B6755F5 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E496726507B8EBDDFE47E8430607E71 /* CalendarHelper.swift */; };
-		C08424734BF5C725C152B4152E89F344 /* ADDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0B4CEBC0047802F3845563F05FF0B7 /* ADDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0EFB60FF6E0BF4B5CDB79A936E547D1 /* ADDatePicker.xib in Sources */ = {isa = PBXBuildFile; fileRef = 977D84FCE4DB9538CE23AE9BCB296929 /* ADDatePicker.xib */; };
-		C90365FF755897E90DE5C18CA278FBB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E08D6C3CD19DAEE6910E538A4415F7E6 /* ModelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7833B7207C2EBE95C9E6721F8024E18 /* ModelDate.swift */; };
-		F7DFB1ABE12638E61444415F5EB94C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2141AB528D38902FF165C5F4A2BC54FB /* InfiniteScrollingBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFC362FE0709096F1FF6104C6AED8C8 /* InfiniteScrollingBehaviour.swift */; };
+		231C43F67C9DAD9E07594B86A4172170 /* ModelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167FF7D474372848300F8BCC08EFC5E8 /* ModelDate.swift */; };
+		35168515ED82310AF915066F418A3440 /* ADDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6023ED3E980C664449E72F5631D2A /* ADDatePicker-dummy.m */; };
+		6983C75708D149962DAB9844AF79469F /* BDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA4F8DA004754C080393C222E4D2D9 /* BDate.swift */; };
+		6D5B5633514ECC785407FEF22041BC59 /* ADDatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3B5CDEC5989BE35C6401E1BF57F8D /* ADDatePickerCell.swift */; };
+		9092F8802FF1D078B8B3C377CC52D86B /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1998D98C5EA940A0CB8DED4E46D2A78 /* CalendarHelper.swift */; };
+		ABFC986149CB15550A1FC3C3298208C7 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
+		AC837EBD3A0ED624002738B050D0B11B /* ADDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B61DFB76663AA2411EF6F7C8A30B3CA /* ADDatePicker.swift */; };
+		B95607240D743F210C200228A034C444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D093D0C24E6145BFBCD124D703108CAD /* ADHorizontalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = A03238832914C8EED84AED74EB2C3F49 /* ADHorizontalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAD0BDF550E304A24DD5EA42C1724D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E1C8B3EFDB5EC094C024503A55915858 /* ADDatePicker.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1427406D919BFFCE002794E45272F676 /* ADDatePicker.xib */; };
+		E6CA33B0B4AA74473FA5A9FF0F73EF34 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BC8860B22BF7F998763D963CC34B56 /* ADDatePickerCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9DABA2EC579CC161793EE3435CA5D8C6 /* ADDatePickerCell.xib */; };
+		F8A871D7172A3A2FF35F477FF7E5B3EA /* ADDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DC6F1A3AA4A077843EF90C8417EF60 /* ADDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E35C58EA04EB3E8D080A595A9DF8268 /* PBXContainerItemProxy */ = {
+		3C80F74913E27FB2F9CA7D2400A0FE8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 872383F03DC1B31705C701534FA2B721;
+			remoteGlobalIDString = 020A2CDE5A8D82465A5BABE913CB616C;
 			remoteInfo = ADDatePicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1533D6AE221B6CB832C9489FFE0D2A15 /* ADDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADDatePicker-dummy.m"; sourceTree = "<group>"; };
-		15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		260314BFE248DFBDD0B1EF9BC97073BD /* ADDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ADDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		272301D642625A5AFC8763C8A48A5405 /* ADDatePickerCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ADDatePickerCell.xib; path = ADDatePicker/Source/Resources/ADDatePickerCell.xib; sourceTree = "<group>"; };
-		3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		45330643ED7EF843C77AFF28BC9D556C /* ADDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADDatePicker-prefix.pch"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FC9C7CA179E633B688481FEF08DDCCB /* ADDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ADDatePicker.modulemap; sourceTree = "<group>"; };
-		6E496726507B8EBDDFE47E8430607E71 /* CalendarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarHelper.swift; path = ADDatePicker/Source/Helpers/CalendarHelper.swift; sourceTree = "<group>"; };
-		74D5F44422B5E302A8014C197CCDAD9F /* BDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BDate.swift; path = ADDatePicker/Source/Model/BDate.swift; sourceTree = "<group>"; };
-		7DD49EC68515212D94C10942F22348C6 /* ADDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADDatePicker.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		977D84FCE4DB9538CE23AE9BCB296929 /* ADDatePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ADDatePicker.xib; path = ADDatePicker/Source/Resources/ADDatePicker.xib; sourceTree = "<group>"; };
-		A647A0AE777332D058030D8E4039F6F2 /* ADDatePickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADDatePickerCell.swift; path = ADDatePicker/Source/View/ADDatePickerCell.swift; sourceTree = "<group>"; };
-		A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		C1A2CD1B0A71FBA74D8DDAFD627C88F2 /* ADDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADDatePicker.swift; path = ADDatePicker/Source/View/ADDatePicker.swift; sourceTree = "<group>"; };
-		C1D6FC2B72BE1DBE379E1AEA35B17BD3 /* InfiniteScrollingBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteScrollingBehaviour.swift; path = ADDatePicker/Source/Helpers/InfiniteScrollingBehaviour.swift; sourceTree = "<group>"; };
-		C47982C9BA65145E99631E90A4EBA378 /* ADHorizontalCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADHorizontalCalendar.h; path = ADDatePicker/ADHorizontalCalendar.h; sourceTree = "<group>"; };
-		D7833B7207C2EBE95C9E6721F8024E18 /* ModelDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelDate.swift; path = ADDatePicker/Source/Model/ModelDate.swift; sourceTree = "<group>"; };
-		D94570608B7EE7702AA49F8E730E6440 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF0AC91CD0009103A265488BBD55D77B /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF0B4CEBC0047802F3845563F05FF0B7 /* ADDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		07F3B5CDEC5989BE35C6401E1BF57F8D /* ADDatePickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADDatePickerCell.swift; path = ADDatePicker/Source/View/ADDatePickerCell.swift; sourceTree = "<group>"; };
+		1427406D919BFFCE002794E45272F676 /* ADDatePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ADDatePicker.xib; path = ADDatePicker/Source/Resources/ADDatePicker.xib; sourceTree = "<group>"; };
+		167FF7D474372848300F8BCC08EFC5E8 /* ModelDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelDate.swift; path = ADDatePicker/Source/Model/ModelDate.swift; sourceTree = "<group>"; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		2B61DFB76663AA2411EF6F7C8A30B3CA /* ADDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADDatePicker.swift; path = ADDatePicker/Source/View/ADDatePicker.swift; sourceTree = "<group>"; };
+		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		454E28646B20266182AF85D09670D683 /* ADDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADDatePicker-prefix.pch"; sourceTree = "<group>"; };
+		5BFA4F8DA004754C080393C222E4D2D9 /* BDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BDate.swift; path = ADDatePicker/Source/Model/BDate.swift; sourceTree = "<group>"; };
+		719EAF135D3927ED7CFEDDCA3C312DB2 /* ADDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADDatePicker.xcconfig; sourceTree = "<group>"; };
+		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		81844F9ED167D1A257F8CC7E0BBCF07C /* ADDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ADDatePicker.framework; path = ADDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC6023ED3E980C664449E72F5631D2A /* ADDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADDatePicker-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DABA2EC579CC161793EE3435CA5D8C6 /* ADDatePickerCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ADDatePickerCell.xib; path = ADDatePicker/Source/Resources/ADDatePickerCell.xib; sourceTree = "<group>"; };
+		A03238832914C8EED84AED74EB2C3F49 /* ADHorizontalCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADHorizontalCalendar.h; path = ADDatePicker/ADHorizontalCalendar.h; sourceTree = "<group>"; };
+		A1998D98C5EA940A0CB8DED4E46D2A78 /* CalendarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarHelper.swift; path = ADDatePicker/Source/Helpers/CalendarHelper.swift; sourceTree = "<group>"; };
+		A6DC6F1A3AA4A077843EF90C8417EF60 /* ADDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B77B342CF7FF4EB7158E7734BBBFAC2E /* ADDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ADDatePicker.modulemap; sourceTree = "<group>"; };
+		C83B9903674B5A0798F8F3B9AD9A29D6 /* ADDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ADDatePicker-Info.plist"; sourceTree = "<group>"; };
+		CFFC362FE0709096F1FF6104C6AED8C8 /* InfiniteScrollingBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteScrollingBehaviour.swift; path = ADDatePicker/Source/Helpers/InfiniteScrollingBehaviour.swift; sourceTree = "<group>"; };
+		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5D366BFA56F5C9EBCC0F2114AE3F804 /* Frameworks */ = {
+		3AA6535F0294A535C30DAD44CCFFA901 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DFB1ABE12638E61444415F5EB94C31 /* Foundation.framework in Frameworks */,
+				B95607240D743F210C200228A034C444 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F19F474D685FFC9DB67BE72CCAB613C0 /* Frameworks */ = {
+		FEAFBBF703AA06C0C4525C407EA2C5AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90365FF755897E90DE5C18CA278FBB4 /* Foundation.framework in Frameworks */,
+				DDDAD0BDF550E304A24DD5EA42C1724D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */ = {
+		308EF0DCB219EE465EDD3A22D112AC92 /* ADDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */,
-				25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */,
-				3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */,
-				11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */,
-				1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */,
-				3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */,
-				044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */,
-				15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */,
-				EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */,
-				A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */,
+				2B61DFB76663AA2411EF6F7C8A30B3CA /* ADDatePicker.swift */,
+				1427406D919BFFCE002794E45272F676 /* ADDatePicker.xib */,
+				07F3B5CDEC5989BE35C6401E1BF57F8D /* ADDatePickerCell.swift */,
+				9DABA2EC579CC161793EE3435CA5D8C6 /* ADDatePickerCell.xib */,
+				A03238832914C8EED84AED74EB2C3F49 /* ADHorizontalCalendar.h */,
+				5BFA4F8DA004754C080393C222E4D2D9 /* BDate.swift */,
+				A1998D98C5EA940A0CB8DED4E46D2A78 /* CalendarHelper.swift */,
+				CFFC362FE0709096F1FF6104C6AED8C8 /* InfiniteScrollingBehaviour.swift */,
+				167FF7D474372848300F8BCC08EFC5E8 /* ModelDate.swift */,
+				FEFC5965EE7E4A18286A99BBD45DEF2A /* Support Files */,
+			);
+			name = ADDatePicker;
+			path = ADDatePicker;
+			sourceTree = "<group>";
+		};
+		3878D10570AE78DE9568C004A9519505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81844F9ED167D1A257F8CC7E0BBCF07C /* ADDatePicker.framework */,
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */,
+				441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */,
+				EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */,
+				D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */,
+				AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */,
+				31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */,
+				7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */,
+				B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */,
+				243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */,
 			);
 			name = "Pods-Example";
 			path = "Target Support Files/Pods-Example";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		A240B0F156ACEB19F84139C377D89CAD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				308EF0DCB219EE465EDD3A22D112AC92 /* ADDatePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
+		CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */,
+				9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AB4A3AC667BD892FCAA42463F215C558 /* Pods */,
-				CE1E8A583906D84AF3E5BFC87B177A09 /* Products */,
-				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A240B0F156ACEB19F84139C377D89CAD /* Pods */,
+				3878D10570AE78DE9568C004A9519505 /* Products */,
+				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A890CDFEB09DEA912335BA1AC06DE145 /* Support Files */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FC9C7CA179E633B688481FEF08DDCCB /* ADDatePicker.modulemap */,
-				7DD49EC68515212D94C10942F22348C6 /* ADDatePicker.xcconfig */,
-				1533D6AE221B6CB832C9489FFE0D2A15 /* ADDatePicker-dummy.m */,
-				45330643ED7EF843C77AFF28BC9D556C /* ADDatePicker-prefix.pch */,
-				FF0B4CEBC0047802F3845563F05FF0B7 /* ADDatePicker-umbrella.h */,
-				D94570608B7EE7702AA49F8E730E6440 /* Info.plist */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFC5965EE7E4A18286A99BBD45DEF2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B77B342CF7FF4EB7158E7734BBBFAC2E /* ADDatePicker.modulemap */,
+				719EAF135D3927ED7CFEDDCA3C312DB2 /* ADDatePicker.xcconfig */,
+				8CC6023ED3E980C664449E72F5631D2A /* ADDatePicker-dummy.m */,
+				C83B9903674B5A0798F8F3B9AD9A29D6 /* ADDatePicker-Info.plist */,
+				454E28646B20266182AF85D09670D683 /* ADDatePicker-prefix.pch */,
+				A6DC6F1A3AA4A077843EF90C8417EF60 /* ADDatePicker-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ADDatePicker";
 			sourceTree = "<group>";
 		};
-		AB4A3AC667BD892FCAA42463F215C558 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B7F86BA047B64D18F8EA3673512CB005 /* ADDatePicker */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B7F86BA047B64D18F8EA3673512CB005 /* ADDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				C1A2CD1B0A71FBA74D8DDAFD627C88F2 /* ADDatePicker.swift */,
-				977D84FCE4DB9538CE23AE9BCB296929 /* ADDatePicker.xib */,
-				A647A0AE777332D058030D8E4039F6F2 /* ADDatePickerCell.swift */,
-				272301D642625A5AFC8763C8A48A5405 /* ADDatePickerCell.xib */,
-				C47982C9BA65145E99631E90A4EBA378 /* ADHorizontalCalendar.h */,
-				74D5F44422B5E302A8014C197CCDAD9F /* BDate.swift */,
-				6E496726507B8EBDDFE47E8430607E71 /* CalendarHelper.swift */,
-				C1D6FC2B72BE1DBE379E1AEA35B17BD3 /* InfiniteScrollingBehaviour.swift */,
-				D7833B7207C2EBE95C9E6721F8024E18 /* ModelDate.swift */,
-				A890CDFEB09DEA912335BA1AC06DE145 /* Support Files */,
-			);
-			path = ADDatePicker;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE1E8A583906D84AF3E5BFC87B177A09 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				260314BFE248DFBDD0B1EF9BC97073BD /* ADDatePicker.framework */,
-				FF0AC91CD0009103A265488BBD55D77B /* Pods_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5848E2DB2C386EC048421A4F8BD99E96 /* Headers */ = {
+		FEBB09903E9DF60A342E5F5124D3E9FF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43CA5BF503A3AE0E2E3179D8F17D7FB1 /* Pods-Example-umbrella.h in Headers */,
+				F8A871D7172A3A2FF35F477FF7E5B3EA /* ADDatePicker-umbrella.h in Headers */,
+				D093D0C24E6145BFBCD124D703108CAD /* ADHorizontalCalendar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BAED4A0D0F395F5EF8908FC2292A4BB /* Headers */ = {
+		FEC34A6A2AB7FDAB9273F4BF39266BE5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08424734BF5C725C152B4152E89F344 /* ADDatePicker-umbrella.h in Headers */,
-				2BAFBC3740E408146288624468CC8E75 /* ADHorizontalCalendar.h in Headers */,
+				E6CA33B0B4AA74473FA5A9FF0F73EF34 /* Pods-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		689EB3182B427A3650844E2F5140FF34 /* Pods-Example */ = {
+		020A2CDE5A8D82465A5BABE913CB616C /* ADDatePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA975D49581FD513084E0866B7E6F62C /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildConfigurationList = 336A7EA6F8F78FAC2047E8261291D14B /* Build configuration list for PBXNativeTarget "ADDatePicker" */;
 			buildPhases = (
-				5848E2DB2C386EC048421A4F8BD99E96 /* Headers */,
-				BA0B25D887B67E3CA285A4F9062EFB71 /* Sources */,
-				A5D366BFA56F5C9EBCC0F2114AE3F804 /* Frameworks */,
-				215E9B1E3DAEA8B638ECA5F2A25BCDCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C4D52084912E039616543C7295A2A632 /* PBXTargetDependency */,
-			);
-			name = "Pods-Example";
-			productName = "Pods-Example";
-			productReference = FF0AC91CD0009103A265488BBD55D77B /* Pods_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		872383F03DC1B31705C701534FA2B721 /* ADDatePicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B275ADA4E861ECC112AECB72E3DBFD1C /* Build configuration list for PBXNativeTarget "ADDatePicker" */;
-			buildPhases = (
-				7BAED4A0D0F395F5EF8908FC2292A4BB /* Headers */,
-				06EC238E2A3A96F73BDDA23542F61463 /* Sources */,
-				F19F474D685FFC9DB67BE72CCAB613C0 /* Frameworks */,
-				39AC1BD80C65B121DD90A09E16943F00 /* Resources */,
+				FEBB09903E9DF60A342E5F5124D3E9FF /* Headers */,
+				85FE171EDB8004032D99171AF5376F1D /* Sources */,
+				FEAFBBF703AA06C0C4525C407EA2C5AD /* Frameworks */,
+				4DD8EE8B5877E0002D2A41C7E4675AD8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -244,50 +224,65 @@
 			);
 			name = ADDatePicker;
 			productName = ADDatePicker;
-			productReference = 260314BFE248DFBDD0B1EF9BC97073BD /* ADDatePicker.framework */;
+			productReference = 81844F9ED167D1A257F8CC7E0BBCF07C /* ADDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E698527F5450AEE5BCA7B41DDD9EEDA /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildPhases = (
+				FEC34A6A2AB7FDAB9273F4BF39266BE5 /* Headers */,
+				1DE8E6932E00B873A301A32B0158D6C1 /* Sources */,
+				3AA6535F0294A535C30DAD44CCFFA901 /* Frameworks */,
+				30CAFF565AF576E4212BFDA9A5465CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353A9B7CB280015CA60846FE225C6051 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = 1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					872383F03DC1B31705C701534FA2B721 = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CE1E8A583906D84AF3E5BFC87B177A09 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3878D10570AE78DE9568C004A9519505 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				872383F03DC1B31705C701534FA2B721 /* ADDatePicker */,
-				689EB3182B427A3650844E2F5140FF34 /* Pods-Example */,
+				020A2CDE5A8D82465A5BABE913CB616C /* ADDatePicker */,
+				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		215E9B1E3DAEA8B638ECA5F2A25BCDCA /* Resources */ = {
+		30CAFF565AF576E4212BFDA9A5465CEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39AC1BD80C65B121DD90A09E16943F00 /* Resources */ = {
+		4DD8EE8B5877E0002D2A41C7E4675AD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,46 +292,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06EC238E2A3A96F73BDDA23542F61463 /* Sources */ = {
+		1DE8E6932E00B873A301A32B0158D6C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F2FC778BBC273778BD5A99F091EC31 /* ADDatePicker-dummy.m in Sources */,
-				0D563800C5C0562E716B103334E10C28 /* ADDatePicker.swift in Sources */,
-				C0EFB60FF6E0BF4B5CDB79A936E547D1 /* ADDatePicker.xib in Sources */,
-				630BC3573C0B4DCFC8C69DF58A2E2DE1 /* ADDatePickerCell.swift in Sources */,
-				4A877A451E3FF56ADB9721A1E522F9D6 /* ADDatePickerCell.xib in Sources */,
-				1B2DBEFDDFB10E20BCBC04575E171FDA /* BDate.swift in Sources */,
-				A22AFC3F5D6BA0ABA87AD7471B6755F5 /* CalendarHelper.swift in Sources */,
-				1A91E02265E86AF45E992FA63DA64DF7 /* InfiniteScrollingBehaviour.swift in Sources */,
-				E08D6C3CD19DAEE6910E538A4415F7E6 /* ModelDate.swift in Sources */,
+				ABFC986149CB15550A1FC3C3298208C7 /* Pods-Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA0B25D887B67E3CA285A4F9062EFB71 /* Sources */ = {
+		85FE171EDB8004032D99171AF5376F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68178B2800423684A66C19B807FBE7A5 /* Pods-Example-dummy.m in Sources */,
+				35168515ED82310AF915066F418A3440 /* ADDatePicker-dummy.m in Sources */,
+				AC837EBD3A0ED624002738B050D0B11B /* ADDatePicker.swift in Sources */,
+				E1C8B3EFDB5EC094C024503A55915858 /* ADDatePicker.xib in Sources */,
+				6D5B5633514ECC785407FEF22041BC59 /* ADDatePickerCell.swift in Sources */,
+				F2BC8860B22BF7F998763D963CC34B56 /* ADDatePickerCell.xib in Sources */,
+				6983C75708D149962DAB9844AF79469F /* BDate.swift in Sources */,
+				9092F8802FF1D078B8B3C377CC52D86B /* CalendarHelper.swift in Sources */,
+				2141AB528D38902FF165C5F4A2BC54FB /* InfiniteScrollingBehaviour.swift in Sources */,
+				231C43F67C9DAD9E07594B86A4172170 /* ModelDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4D52084912E039616543C7295A2A632 /* PBXTargetDependency */ = {
+		353A9B7CB280015CA60846FE225C6051 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ADDatePicker;
-			target = 872383F03DC1B31705C701534FA2B721 /* ADDatePicker */;
-			targetProxy = 5E35C58EA04EB3E8D080A595A9DF8268 /* PBXContainerItemProxy */;
+			target = 020A2CDE5A8D82465A5BABE913CB616C /* ADDatePicker */;
+			targetProxy = 3C80F74913E27FB2F9CA7D2400A0FE8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3F05BC613ADA68F7BFF46C3D2CE3DA8E /* Release */ = {
+		0139B0E10C8A289CEA5E03F6BC23EE9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD49EC68515212D94C10942F22348C6 /* ADDatePicker.xcconfig */;
+			baseConfigurationReference = 719EAF135D3927ED7CFEDDCA3C312DB2 /* ADDatePicker.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -348,7 +344,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/ADDatePicker/ADDatePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADDatePicker/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ADDatePicker/ADDatePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -358,16 +354,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		7FC7B8135FDED1560A80CA98EC6F7207 /* Release */ = {
+		2F55A3566E4E4FC936EAEAB624C33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,8 +392,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -422,15 +413,18 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		9AED46805C27109155CAD47F167ACEFA /* Debug */ = {
+		46322EDD13C1F1EF8269458DC98AE6D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = 719EAF135D3927ED7CFEDDCA3C312DB2 /* ADDatePicker.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -441,7 +435,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ADDatePicker/ADDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ADDatePicker/ADDatePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ADDatePicker/ADDatePicker.modulemap";
+				PRODUCT_MODULE_NAME = ADDatePicker;
+				PRODUCT_NAME = ADDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F66D63FB50AF7E6164ED9F0E6765783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,18 +482,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9CE8B7935932495B8C298EC8BF303806 /* Debug */ = {
+		88C13B583E1453B92FAFF11DB91B5AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD49EC68515212D94C10942F22348C6 /* ADDatePicker.xcconfig */;
+			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -476,26 +504,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ADDatePicker/ADDatePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADDatePicker/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ADDatePicker/ADDatePicker.modulemap";
-				PRODUCT_MODULE_NAME = ADDatePicker;
-				PRODUCT_NAME = ADDatePicker;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B4A339C5C9837FC180FD2D276CBB365A /* Debug */ = {
+		959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -527,8 +556,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -555,77 +582,43 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B573AFE845C30A343382205294654B40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0E698527F5450AEE5BCA7B41DDD9EEDA /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4A339C5C9837FC180FD2D276CBB365A /* Debug */,
-				7FC7B8135FDED1560A80CA98EC6F7207 /* Release */,
+				6F66D63FB50AF7E6164ED9F0E6765783 /* Debug */,
+				88C13B583E1453B92FAFF11DB91B5AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B275ADA4E861ECC112AECB72E3DBFD1C /* Build configuration list for PBXNativeTarget "ADDatePicker" */ = {
+		336A7EA6F8F78FAC2047E8261291D14B /* Build configuration list for PBXNativeTarget "ADDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CE8B7935932495B8C298EC8BF303806 /* Debug */,
-				3F05BC613ADA68F7BFF46C3D2CE3DA8E /* Release */,
+				0139B0E10C8A289CEA5E03F6BC23EE9F /* Debug */,
+				46322EDD13C1F1EF8269458DC98AE6D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA975D49581FD513084E0866B7E6F62C /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9AED46805C27109155CAD47F167ACEFA /* Debug */,
-				B573AFE845C30A343382205294654B40 /* Release */,
+				959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */,
+				2F55A3566E4E4FC936EAEAB624C33C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
