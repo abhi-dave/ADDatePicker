@@ -8,6 +8,9 @@
 
 import UIKit
 
+public protocol ADDatePickerDelegate {
+    func ADDatePicker(didChange date: Date)
+}
 
 open class ADDatePicker: UIView {
     
@@ -24,7 +27,7 @@ open class ADDatePicker: UIView {
     var infiniteScrollingBehaviourForYears: InfiniteScrollingBehaviour!
     var infiniteScrollingBehaviourForDays: InfiniteScrollingBehaviour!
     var infiniteScrollingBehaviourForMonths: InfiniteScrollingBehaviour!
-
+    
     // Accessible Properties
     
     public var bgColor: UIColor = #colorLiteral(red: 0.5564764738, green: 0.754239738, blue: 0.6585322022, alpha: 1)
@@ -35,8 +38,8 @@ open class ADDatePicker: UIView {
     public var fontFamily: UIFont = UIFont(name: "GillSans-SemiBold", size: 20)!
     public var selectionType: SelectionType = .roundedsquare
     public var intialDate:Date = Date()
+    public var delegate:ADDatePickerDelegate?
     
-
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -64,7 +67,7 @@ open class ADDatePicker: UIView {
             infiniteScrollingBehaviourForYears = InfiniteScrollingBehaviour(withCollectionView: yearRow, andData: years, delegate: self, configuration: configuration)
         }
     }
-
+    
     private func loadinit(){
         let bundle = Bundle(for: self.classForCoder)
         bundle.loadNibNamed("ADDatePicker", owner: self, options: nil)
@@ -80,23 +83,42 @@ open class ADDatePicker: UIView {
     
     func initialDate(date: Date){
         let (mm,dd,yyyy) = date.seprateDateInDDMMYY
-        let y = years.index { (modelObj) -> Bool in
+        
+        // Vishva - Start
+        guard let y = years.firstIndex(where: { (modelObj) -> Bool in
+            modelObj.type == yyyy
+        }) else {
+            print("Year index is nil")
+            return
+        }
+        
+        guard let d = days.firstIndex(where: { (modelObj) -> Bool in
+            Int(modelObj.type) == Int(dd)
+        }) else {
+            print("Day index is nil")
+            return
+        }
+        /*let y = years.index { (modelObj) -> Bool in
             return modelObj.type == yyyy
         }
         
         let d = days.index { (modelObj) -> Bool in
             return Int(modelObj.type) == Int(dd)
-        }
+        }*/
+        
+        
+        // Vishva - End
+        
         
         let m = Int(mm)! - 1
         
-        years[y!].isSelected = true
+        years[y].isSelected = true
         Months[m].isSelected = true
-        days[d!].isSelected = true
+        days[d].isSelected = true
         
-        collectionState(infiniteScrollingBehaviourForYears, y!)
+        collectionState(infiniteScrollingBehaviourForYears, y)
         collectionState(infiniteScrollingBehaviourForMonths, m)
-        collectionState(infiniteScrollingBehaviourForDays, d!)
+        collectionState(infiniteScrollingBehaviourForDays, d)
         
     }
     
@@ -118,10 +140,11 @@ open class ADDatePicker: UIView {
         default:
             break
         }
+        
         collectionView.scroll(toElementAtIndex: index)
     }
     
-   private func registerCell(){
+    private func registerCell(){
         let bundle = Bundle(for: self.classForCoder)
         let nibName = UINib(nibName: "ADDatePickerCell", bundle:bundle)
         dateRow.register(nibName, forCellWithReuseIdentifier: "cell")
@@ -131,7 +154,7 @@ open class ADDatePicker: UIView {
 }
 
 extension ADDatePicker: UICollectionViewDelegate {
-
+    
     
     public func didEndScrolling(inInfiniteScrollingBehaviour behaviour: InfiniteScrollingBehaviour) {
         selectMiddleRow(collectionView: behaviour.collectionView, data: behaviour.dataSetWithBoundary as! [ModelDate])
@@ -146,6 +169,9 @@ extension ADDatePicker: UICollectionViewDelegate {
         default:
             break
         }
+        
+        let date = CalendarHelper.getThatDate(days, Months, years)
+        delegate?.ADDatePicker(didChange: date)
     }
     func selectMiddleRow(collectionView: UICollectionView, data: [ModelDate]){
         
@@ -178,7 +204,7 @@ extension ADDatePicker {
             newDays.selectDay(selectedDay: selectedDay)
         }
         days = newDays
-       // infiniteScrollingBehaviourForDays.collectionView.reloadSections(IndexSet(integer: 0))
+        // infiniteScrollingBehaviourForDays.collectionView.reloadSections(IndexSet(integer: 0))
         infiniteScrollingBehaviourForDays.reload(withData: days)
         if Int(currentDay)! > days.count{
             let index = days.count - 1
@@ -213,10 +239,10 @@ extension ADDatePicker : InfiniteScrollingBehaviourDelegate {
                     cell.deSelectCell(bgColor: deselectedBgColor, textColor: deselectTextColor)
                 }
             }
-
+            
         case 2:
             if let year = data as? ModelDate {
-                 cell.dateLbl.text = year.type
+                cell.dateLbl.text = year.type
                 if year.isSelected {
                     cell.selectedCell(textColor: selectedTextColor)
                 }else {
@@ -267,9 +293,11 @@ extension ADDatePicker : InfiniteScrollingBehaviourDelegate {
                 infiniteScrollingBehaviourForYears.reload(withData: years)
             }
         }
+        let date = CalendarHelper.getThatDate(days, Months, years)
+        delegate?.ADDatePicker(didChange: date)
         behaviour.scroll(toElementAtIndex: originalIndex)
     }
-
+    
 }
 
 extension ADDatePicker {
@@ -301,5 +329,5 @@ extension ADDatePicker {
             return Float(sorted[(sorted.count - 1) / 2].row)
         }
     }
-
+    
 }

@@ -83,23 +83,26 @@ open class ADDatePicker: UIView {
     
     func initialDate(date: Date){
         let (mm,dd,yyyy) = date.seprateDateInDDMMYY
-        let y = years.index { (modelObj) -> Bool in
-            return modelObj.type == yyyy
+        guard let y = years.firstIndex(where: { (modelObj) -> Bool in
+            modelObj.type == yyyy
+        }) else {
+            print("Year index is nil")
+            return
         }
         
-        let d = days.index { (modelObj) -> Bool in
-            return Int(modelObj.type) == Int(dd)
+        guard let d = days.firstIndex(where: { (modelObj) -> Bool in
+            Int(modelObj.type) == Int(dd)
+        }) else {
+            print("Day index is nil")
+            return
         }
-        
         let m = Int(mm)! - 1
-        
-        years[y!].isSelected = true
+        years[y].isSelected = true
         Months[m].isSelected = true
-        days[d!].isSelected = true
-        
-        collectionState(infiniteScrollingBehaviourForYears, y!)
+        days[d].isSelected = true
+        collectionState(infiniteScrollingBehaviourForYears, y)
         collectionState(infiniteScrollingBehaviourForMonths, m)
-        collectionState(infiniteScrollingBehaviourForDays, d!)
+        collectionState(infiniteScrollingBehaviourForDays, d)
         
     }
     

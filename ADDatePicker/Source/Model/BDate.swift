@@ -21,7 +21,9 @@ class BDate {
     }
     
     class func getMonths() -> [String]{
-        return ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
+        let formatter = DateFormatter()
+        let monthComponents = formatter.shortMonthSymbols
+        return monthComponents ?? []
     }
     class func getYears(startYear: Int, endYear: Int) -> [String] {
         return CalendarHelper.fetchYears(startYear: startYear, endYear: endYear)
